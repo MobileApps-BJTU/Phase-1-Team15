@@ -2,7 +2,8 @@
     
 some photos that they took are of high quality and can do earn money by selling them. 
 
-    However, there is not a existing platform for common users to sell their original photos.
+
+However, there is not a existing platform for common users to sell their original photos.
     
 Therefore, we plan to develop the application named 'ShaiPai'.'Shan' means '善' in Chinese, 
 
@@ -14,7 +15,8 @@ partial functions of e-commerce.It can not only share the photos that we like, b
 
 donate some money to foundations.
 
-    The target users are people who 
+  
+  The target users are people who 
     
   have a smart phone
   

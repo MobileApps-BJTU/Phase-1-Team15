@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RIDName"
+        android:layout_above="@+id/Rpwd"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/username"
+        android:imeOptions="actionNext"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Rpwd"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/RIDName"
+        android:hint="@string/password"
+        android:imeOptions="actionNext"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Rpwd1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Rpwd"
+        android:hint="@string/repwd"
+        android:imeOptions="actionNext"/>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/RheadIma"
+        android:src="@drawable/image"
+        android:layout_above="@+id/RIDName"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/R_ok"
+        android:layout_below="@+id/Rpwd1"
+        android:layout_alignRight="@+id/Rpwd1"
+        android:layout_alignLeft="@+id/Rpwd1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/R_back"
+        android:layout_below="@+id/Rpwd1"
+        android:layout_marginTop="52dp"
+        android:layout_alignRight="@+id/R_ok"
+        android:layout_alignLeft="@+id/R_ok" />
+
+
+</RelativeLayout>

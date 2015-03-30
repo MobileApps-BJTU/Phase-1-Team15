@@ -132,7 +132,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="145sp"
-        android:layout_marginStart="43dp" />
+        android:layout_marginStart="43dp"
+        android:id="@+id/upload"/>
 
     </RelativeLayout>
 

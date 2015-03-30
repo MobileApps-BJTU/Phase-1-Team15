@@ -29,12 +29,12 @@ import java.util.Objects;
 public class ImageListFragment extends ListFragment {
 
     private OnFragmentInteractionListener mListener;
-    private String[] desc= new String[]{
-            "jiang","dong","yu","zhou","qi"
-    };
-    private int[] iamgeids= new int[]{
-            R.drawable.view1, R.drawable.view2, R.drawable.view3, R.drawable.view4, R.drawable.people1
-    };
+//    private String[] desc= new String[]{
+//            "jiang","dong","yu","zhou","qi"
+//    };
+//    private int[] iamgeids= new int[]{
+//            R.drawable.view1, R.drawable.view2, R.drawable.view3, R.drawable.view4, R.drawable.people1
+//    };
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
@@ -47,7 +47,7 @@ public class ImageListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
 
         List<Map<String,Object>> listItems= new ArrayList<Map<String, Object>>();
-        for(int i=0;i<desc.length;i++){
+        for(int i=0;i<photoContent.item.size();i++){
             Map<String,Object> item= new HashMap<String,Object>();
             photoContent.photo p=photoContent.item.get(i);
 //            item.put("header",iamgeids[i]);
@@ -91,7 +91,8 @@ public class ImageListFragment extends ListFragment {
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-            mListener.onFragmentInteraction(DummyContent.ITEMS.get(position).id);
+//            mListener.onFragmentInteraction(DummyContent.ITEMS.get(position).id);
+            mListener.onFragmentInteraction(String.valueOf(position));
         }
     }
 

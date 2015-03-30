@@ -17,24 +17,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="login"
-           >
-        </activity>
-        <activity android:name="register"
-            >
-        </activity>
-        <activity android:name="hot"
-            >
-        </activity>
-        <activity android:name="ImageList"
-            >
-        </activity>
-        <activity android:name="follow"
-            >
-        </activity>
-        <activity android:name="PhotoDetail"
-            >
-        </activity>
+        <activity android:name="login"/>
+        <activity android:name="register"/>
+        <activity android:name="hot"/>
+        <activity android:name="ImageList"/>
+        <activity android:name="follow"/>
+        <activity android:name="PhotoDetail"/>
+        <activity android:name="Mine"/>
+        <activity android:name="Upload"/>
     </application>
 
 </manifest>

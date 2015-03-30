@@ -6,32 +6,32 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
-import android.provider.CalendarContract;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by ZQ on 2015/3/28.
+ * Created by ZQ on 2015/3/29.
  */
-public class follow extends BaseActivity implements ImageListFragment.OnFragmentInteractionListener{
+public class Mine extends BaseActivity {
+
     private Button hot,mine,follow;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.follow);
-        hot=(Button)findViewById(R.id.fhot);
-        mine=(Button)findViewById(R.id.fmine);
-        follow=(Button)findViewById(R.id.mfollow);
-        follow.setBackgroundColor(Color.YELLOW);
+        setContentView(R.layout.mine);
+        hot=(Button)findViewById(R.id.mhot);
+        mine=(Button)findViewById(R.id.mmine);
+        follow=(Button)findViewById(R.id.minefollow);
+        mine.setBackgroundColor(Color.YELLOW);
         //button 监听
-        mine.setOnClickListener(new View.OnClickListener(){
+        follow.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 finish();
                 BaseActivity.popActivity();
-                follow.setBackgroundColor(Color.WHITE);
-                Intent intent=new Intent(follow.this,Mine.class);
+                mine.setBackgroundColor(Color.WHITE);
+                Intent intent=new Intent(Mine.this,follow.class);
                 startActivity(intent);
 
             }
@@ -42,12 +42,17 @@ public class follow extends BaseActivity implements ImageListFragment.OnFragment
             public void onClick(View v) {
                 finish();
                 BaseActivity.popActivity();
-                follow.setBackgroundColor(Color.WHITE);
-                Intent intent=new Intent(follow.this,hot.class);
+                mine.setBackgroundColor(Color.WHITE);
+                Intent intent=new Intent(Mine.this,hot.class);
                 startActivity(intent);
 
             }
         });
+    }
+
+    @Override
+    public void processMessage(Message message) {
+        
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event)
@@ -81,6 +86,7 @@ public class follow extends BaseActivity implements ImageListFragment.OnFragment
                 case AlertDialog.BUTTON_POSITIVE:// "确认"按钮退出程序
                     BaseActivity.popActivity();
                     finish();
+                    java.lang.System.exit(0);
                     break;
                 case AlertDialog.BUTTON_NEGATIVE:// "取消"第二个按钮取消对话框
                     break;
@@ -89,16 +95,4 @@ public class follow extends BaseActivity implements ImageListFragment.OnFragment
             }
         }
     };
-
-    @Override
-    public void processMessage(Message message) {
-
-    }
-
-    @Override
-    public void onFragmentInteraction(String id) {
-        Intent intent=new Intent(follow.this,PhotoDetail.class);
-        intent.putExtra("id", id);
-        startActivity(intent);
-    }
 }

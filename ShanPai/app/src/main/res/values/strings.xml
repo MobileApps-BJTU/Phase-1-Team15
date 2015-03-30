@@ -1,7 +1,5 @@
     <resources>
         <string name="app_name">ShanPai</string>
-
-        <string name="hello_world">Hello world!</string>
         <string name="action_settings">Settings</string>
         <string name="username">Username</string>
         <string name="password">Password</string>
@@ -25,9 +23,20 @@
         <string name="people">People</string>
         <string name="news">News</string>
         <string name="view">View</string>
+        <string name="buy">Buy</string>
+        <string name="description">Description:</string>
+        <string name="upload">Upload</string>
+        <string name="setPrice">Set Price:</string>
+        <string name="exitupload">Are you sure exit?</string>
+        <string name="uploadsucess">The photo upload successfully!</string>
+        <string name="buysucess">Buy photo successfully!</string>
+        <string name="price">Price:</string>
+        <string name="love">Love %:</string>
+        <string name="surebuy">are you sure to buy it?</string>
+        <string name="buyerror">your balance is not enough!!!!!</string>
+        <string name="donate">you have donated:</string>
+        <string name="balance">your balance:</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     </resources>
 

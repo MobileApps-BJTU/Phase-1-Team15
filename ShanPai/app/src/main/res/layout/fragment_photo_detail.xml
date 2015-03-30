@@ -2,22 +2,85 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/background_material_dark">
+    android:background="@color/background_material_dark"
+    android:weightSum="1">
     <ImageView
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:id="@+id/photo_id"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/photo_id"
-        />
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_800"
+            android:textSize="30sp"
+            android:text="@string/description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_desc"
+            android:background="@color/material_blue_grey_800"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
+
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_800"
+            android:textSize="30sp"
+            android:text="@string/price"
+            />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/photo_desc"/>
+        android:background="@color/material_blue_grey_800"
+        android:textSize="30sp"
+        android:id="@+id/currentprice"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left">
 
+        <TextView
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_800"
+            android:textSize="30sp"
+            android:text="@string/love"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_blue_grey_800"
+            android:textSize="30sp"
+            android:id="@+id/currentpercent"/>
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/dok"
-        android:text="@string/ok"/>
+        android:id="@+id/buy"
+        android:text="@string/buy"
+        android:layout_gravity="right"/>
 
 
 </LinearLayout>

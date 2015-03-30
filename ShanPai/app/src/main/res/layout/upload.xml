@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_dark">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/uploadBack" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/uploadbtn" />
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/uploadBack"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/uploadImage" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:layout_below="@+id/textView"
+        android:id="@+id/upload_desc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setPrice"
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/uploadImage"
+        android:layout_alignLeft="@+id/uploadImage"
+        android:layout_alignStart="@+id/uploadImage" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="$10"
+        android:textSize="20sp"
+        android:id="@+id/price"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

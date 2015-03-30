@@ -9,10 +9,12 @@ public class Information {
     private Uri uri;
     private String id;
     private String pwd;
+    private double balance;
 
     public Information(){
             id="";
             pwd="";
+            balance=0.0;
             uri=null;
 
     }
@@ -27,6 +29,14 @@ public class Information {
 
     public void setUri(Uri uri) {
         this.uri = uri;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return balance;
     }
 
     public String getId() {

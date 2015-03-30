@@ -3,6 +3,7 @@ package com.example.zq.shanpai;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.KeyEvent;
@@ -20,11 +21,13 @@ public class hot extends BaseActivity {
     private ImageButton view;
     private ImageButton daily;
     private ImageButton news;
-    private Button follow,mine;
+    private ImageButton upload;
+    private Button follow,mine,hot;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainpage);
+        upload=(ImageButton)findViewById(R.id.upload);
         professional=(ImageButton)findViewById(R.id.professional);
         wellsold=(ImageButton)findViewById(R.id.well_sold);
         people=(ImageButton)findViewById(R.id.people);
@@ -33,11 +36,18 @@ public class hot extends BaseActivity {
         daily=(ImageButton)findViewById(R.id.daily);
         follow=(Button)findViewById(R.id.follow);
         mine=(Button)findViewById(R.id.mine);
+        hot=(Button)findViewById(R.id.hot);
         //button 监听
+        hot.setBackgroundColor(Color.YELLOW);
         mine.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
+                finish();
+                BaseActivity.popActivity();
+                hot.setBackgroundColor(Color.WHITE);
+                Intent intent=new Intent(hot.this,Mine.class);
+                startActivity(intent);
 
             }
         });
@@ -49,6 +59,8 @@ public class hot extends BaseActivity {
                 BaseActivity.popActivity();
                 Intent intent=new Intent(hot.this,follow.class);
                 startActivity(intent);
+                hot.setBackgroundColor(Color.WHITE);
+
             }
         });
         //image button 监听
@@ -97,6 +109,14 @@ public class hot extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(hot.this,ImageList.class);
+                startActivity(intent);
+            }
+        });
+        upload.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(hot.this,Upload.class);
                 startActivity(intent);
             }
         });

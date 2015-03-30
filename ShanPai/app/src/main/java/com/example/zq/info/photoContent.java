@@ -17,10 +17,14 @@ public class photoContent {
         public String desc;
         public int imageid;
         public int id;
-        public photo (String desc, int imageid,int id){
+        public double price;
+        public double percent;
+        public photo (String desc, int imageid,int id,double price,double percent){
             this.desc=desc;
             this.imageid=imageid;
             this.id=id;
+            this.price=price;
+            this.percent=percent;
         }
 
     }
@@ -28,11 +32,11 @@ public class photoContent {
     public static List<photo> item= new ArrayList<photo>();
     public static Map<Integer,photo> item_map=new Hashtable<Integer,photo>();
     static{
-        addItem(new photo("jiang",R.drawable.view1,1));
-        addItem(new photo("dong",R.drawable.view2,2));
-        addItem(new photo("yu",R.drawable.view3,3));
-        addItem(new photo("zhou",R.drawable.view4,5));
-        addItem(new photo("qi",R.drawable.people1,5));
+        addItem(new photo("jiang",R.drawable.view1,1,10,0.05));
+        addItem(new photo("dong",R.drawable.view2,2,1,0.1));
+        addItem(new photo("yu",R.drawable.view3,3,15,0.15));
+        addItem(new photo("zhou",R.drawable.view4,4,10,0.2));
+        addItem(new photo("qi",R.drawable.people1,5,10,0.5));
     }
 
     private static void addItem(photo photo){

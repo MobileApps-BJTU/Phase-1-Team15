@@ -51,6 +51,7 @@ public class ImageList extends BaseActivity implements ImageListFragment.OnFragm
     public void onFragmentInteraction(String id) {
         Intent intent=new Intent(ImageList.this,PhotoDetail.class);
         intent.putExtra("id", id);
+
         startActivity(intent);
 
     }

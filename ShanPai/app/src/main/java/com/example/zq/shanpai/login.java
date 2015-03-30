@@ -88,6 +88,7 @@ public class login extends BaseActivity{
                 if(name.equals("haha")&&pwd.equals("haha")) {
                     BaseActivity.info.setId("haha");
                     BaseActivity.info.setPwd("haha");
+                    BaseActivity.info.setBalance(100.0);
                     Intent intent=new Intent(login.this,hot.class);
                     startActivity(intent);
                 }

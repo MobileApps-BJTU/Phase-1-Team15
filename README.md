@@ -1,7 +1,7 @@
     
-    Nowadays, more and more people own smart phones and they are eager to take photos.What's more, 
-    
-some photos that they took are of high quality and can do earn money by selling them. 
+    Nowadays, more and more people own smart phones and they are eager to take photos.What's 
+
+more, some photos that they took are of high quality and can do earn money by selling them. 
 
 
     However, there is not a existing platform for common users to sell their original photos.

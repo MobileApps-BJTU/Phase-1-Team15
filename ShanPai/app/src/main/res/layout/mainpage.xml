@@ -43,7 +43,7 @@
         android:columnCount="2">
 
         <ImageButton
-            android:src="@drawable/view2"
+            android:src="@drawable/people2"
             android:id="@+id/professional"
             android:layout_width="192dp"
             android:layout_height="110dp"
@@ -58,13 +58,13 @@
 
         <TextView
             android:text="@string/profession"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="1"
             android:layout_column="0"/>
         <TextView
             android:text="@string/wellsold"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="1"
             android:layout_column="1"/>
@@ -76,7 +76,7 @@
             android:layout_height="110dp"
             android:layout_row="2"
             android:layout_column="0" />
-        <ImageButton android:src="@drawable/people1"
+        <ImageButton android:src="@drawable/people3"
             android:id="@+id/people"
             android:layout_width="192dp"
             android:layout_height="110dp"
@@ -84,24 +84,24 @@
             android:layout_column="1" />
         <TextView
             android:text="@string/daily"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="4"
             android:layout_column="0"/>
         <TextView
             android:text="@string/people"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="4"
             android:layout_column="1"/>
 
-        <ImageButton android:src="@drawable/news3"
+        <ImageButton android:src="@drawable/news2"
             android:id="@+id/news"
             android:layout_width="192dp"
             android:layout_height="110dp"
             android:layout_row="5"
             android:layout_column="0" />
-        <ImageButton android:src="@drawable/view4"
+        <ImageButton android:src="@drawable/news3"
             android:id="@+id/view"
             android:layout_width="192dp"
             android:layout_height="110dp"
@@ -109,13 +109,13 @@
             android:layout_column="1" />
         <TextView
             android:text="@string/news"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="6"
             android:layout_column="0"/>
         <TextView
             android:text="@string/view"
-            android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="25sp"
             android:layout_row="6"
             android:layout_column="1"/>

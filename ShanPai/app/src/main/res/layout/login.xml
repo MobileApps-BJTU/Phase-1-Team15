@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_dark">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/IDName"
+        android:layout_above="@+id/pwd"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/username"
+        android:imeOptions="actionNext"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pwd"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/IDName"
+        android:hint="@string/password"
+        android:imeOptions="actionNext"/>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/headIma"
+        android:src="@drawable/image"
+        android:layout_above="@+id/IDName"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/Ok"
+        android:layout_below="@+id/pwd"
+        android:layout_alignRight="@+id/pwd"
+        android:layout_alignLeft="@+id/pwd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:id="@+id/Register"
+        android:layout_below="@+id/pwd"
+        android:layout_marginTop="51dp"
+        android:layout_alignRight="@+id/Ok"
+        android:layout_alignLeft="@+id/Ok" />
+
+</RelativeLayout>

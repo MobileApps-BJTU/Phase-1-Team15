@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_material_dark">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0">
+
+        <Button
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hot"
+            android:id="@+id/fhot"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="@string/follow"
+            android:id="@+id/mfollow"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mine"
+            android:id="@+id/fmine"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fima_list"
+        android:name="com.example.zq.shanpai.ImageListFragment"
+        tools:layout="@android:layout/list_content" />
+
+
+</LinearLayout>
